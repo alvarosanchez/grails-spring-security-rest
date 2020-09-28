@@ -1,5 +1,5 @@
 ext {
-    pac4jVersion = '4.0.1'
+    pac4jVersion = '4.1.0'
 }
 
 dependencies {
