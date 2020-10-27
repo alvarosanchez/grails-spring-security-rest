@@ -9,7 +9,7 @@ buildscript {
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
-        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.15.2"
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.18.0"
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5'
         //classpath "io.spring.gradle:dependency-management-plugin:0.6.1.RELEASE"
         classpath 'com.adarshr:gradle-test-logger-plugin:2.0.0'
