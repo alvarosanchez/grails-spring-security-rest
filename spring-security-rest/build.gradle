@@ -17,7 +17,7 @@ dependencies {
     compile 'org.jasig.cas.client:cas-client-core:3.6.1'
 
     //https://snyk.io/vuln/SNYK-JAVA-ORGBOUNCYCASTLE-472372
-    compile 'org.bouncycastle:bcprov-jdk15on:1.65'
+    compile 'org.bouncycastle:bcprov-jdk15on:1.67'
 
     compile "com.nimbusds:nimbus-jose-jwt:8.17"
     compile 'commons-codec:commons-codec:1.14'
