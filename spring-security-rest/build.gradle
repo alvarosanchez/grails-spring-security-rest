@@ -14,7 +14,7 @@ dependencies {
     compile "org.pac4j:pac4j-oauth:${pac4jVersion}"
     compile "org.pac4j:pac4j-cas:${pac4jVersion}"
 
-    compile 'org.jasig.cas.client:cas-client-core:3.6.1'
+    compile 'org.jasig.cas.client:cas-client-core:3.6.2'
 
     //https://snyk.io/vuln/SNYK-JAVA-ORGBOUNCYCASTLE-472372
     compile 'org.bouncycastle:bcprov-jdk15on:1.65'
