@@ -133,8 +133,13 @@ class RestOauthController {
                 User principal = user ? user as User : null
                 log.debug "Principal found for refresh token: ${principal}"
 
-                AccessToken accessToken = tokenGenerator.generateAccessToken(principal, false)
-                accessToken.refreshToken = refreshToken
+                def generateRefreshToken = grailsApplication.config.grails.plugin.springsecurity.rest.token.storage.jwt.generateNewRefreshTokenOnRefresh
+
+                AccessToken accessToken = tokenGenerator.generateAccessToken(principal, generateRefreshToken)
+
+                if (!generateRefreshToken) {
+                    accessToken.refreshToken = refreshToken
+                }
 
                 authenticationEventPublisher.publishTokenCreation(accessToken)
 

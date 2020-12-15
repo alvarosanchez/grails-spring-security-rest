@@ -187,6 +187,9 @@ If you prefer to configure your refresh tokens to expire automatically, you can 
 `grails.plugin.springsecurity.rest.token.storage.jwt.refreshExpiration` to the number of seconds before the token
 is invalid. After this period, a client would be forced to present login credentials in order to obtain a new access token.
 
+You can also enable refresh token rotation. This means that you will retrieve a new refresh token with
+each refresh token usage. To enable this option, you have to set `grails.plugin.springsecurity.rest.token.storage.jwt.generateNewRefreshTokenOnRefresh` to `true`.
+
 [source,javascript]
 .Listing {counter:listing}. Sample HTTP request to obtain an access token
 ----

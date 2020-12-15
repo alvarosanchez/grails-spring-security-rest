@@ -61,6 +61,7 @@ security {
                     secret = null
                     expiration = 3600
                     refreshExpiration = null
+                    generateNewRefreshTokenOnRefresh = false
                 }
             }
 
