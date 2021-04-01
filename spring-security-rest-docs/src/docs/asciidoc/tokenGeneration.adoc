@@ -55,7 +55,7 @@ If using signed JWT's, the relevant configuration is the following:
 |`HS256`
 
 |`grails.plugin.springsecurity.rest.token.storage.jwt.secret`
-|A long enough key.
+|At least 256 bits (32 characters)
 |`null`
 |===
 
