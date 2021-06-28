@@ -20,7 +20,7 @@ dependencies {
     compile 'org.bouncycastle:bcprov-jdk15on:1.65'
 
     compile "com.nimbusds:nimbus-jose-jwt:8.17"
-    compile 'commons-codec:commons-codec:1.14'
+    compile 'commons-codec:commons-codec:1.15'
     compile "org.grails.plugins:spring-security-core:${springSecurityCoreVersion}"
 
     compile "commons-fileupload:commons-fileupload:1.4"
